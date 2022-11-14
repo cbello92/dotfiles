@@ -1,0 +1,12 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "MonoMin",
+    "workbench.activityBar.visible": false,
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontWeight": "bold",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "terminal.external.linuxExec": "/bin/zsh",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "diffEditor.ignoreTrimWhitespace": false
+}
