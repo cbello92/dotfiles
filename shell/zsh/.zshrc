@@ -1,8 +1,7 @@
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-ZSH_THEME="gndx-zsh-theme/gndx"
+ZSH_THEME="cdev"
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
