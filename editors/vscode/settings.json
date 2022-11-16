@@ -8,6 +8,7 @@
     "editor.fontLigatures": true,
     "terminal.external.linuxExec": "/bin/zsh",
     "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontFamily": "Cascadia Code",
     "diffEditor.ignoreTrimWhitespace": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
