@@ -22,7 +22,7 @@ function get_time() {
 
 function get_current_directory() {
     local colorText="%{$fg[white]%}";
-    local directory="%d";
+    local directory="%~";
     echo "${colorText}📦 ${directory}";
 }
 
