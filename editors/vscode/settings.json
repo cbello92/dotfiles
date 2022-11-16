@@ -8,5 +8,8 @@
     "editor.fontLigatures": true,
     "terminal.external.linuxExec": "/bin/zsh",
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
