@@ -39,4 +39,4 @@ alias gipff="git push -ff origin"
 alias release-start="git flow release start"
 alias release-end="git flow release finish"
 
-alias dot="code $HOME/.dotfiles"
+alias dotf="code $HOME/.dotfiles"
