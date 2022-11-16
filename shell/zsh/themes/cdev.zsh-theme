@@ -5,9 +5,9 @@ function git_prompt_info() {
         local colorTextBranch="%{$fg_bold[yellow]%}";
         git_status=$(git diff --stat | tail -n1 2>/dev/null)
         if [ "$git_status" ]; then
-            print -P " ${colorTextBranch}(${current_branch} 🔥)";
+            print -P "${colorTextBranch}【${current_branch} 🔥】";
         else
-            print -P " ${colorTextBranch}(${current_branch} 💚)"
+            print -P "${colorTextBranch}【${current_branch} 💚】"
         fi
     else
         echo ""
