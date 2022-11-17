@@ -1,16 +1,15 @@
 function git_prompt_info() {
     inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
     if [ "$inside_git_repo" ]; then
-        local current_branch=$(git branch --show-current)
-        local colorTextBranch="%{$fg_bold[yellow]%}";
+        local current_branch=$(git branch --show-current);
         git_status=$(git diff --stat | tail -n1 2>/dev/null)
         if [ "$git_status" ]; then
-            print -P "${colorTextBranch}【${current_branch} 🔥】";
+            echo "%{$fg_bold[yellow]%} (${current_branch} 🤔)";
         else
-            print -P "${colorTextBranch}【${current_branch} 💚】"
+            echo "%{$fg_bold[green]%} (${current_branch} 😎)";
         fi
     else
-        echo ""
+        echo "";
     fi
 }
 
@@ -26,11 +25,14 @@ function get_current_directory() {
     echo "${colorText}📦 ${directory}";
 }
 
-function get_name_desktop() {
-    local colorText="%{$fg_bold[cyan]%}";
-    local name_desktop="%m";
-    echo "${colorText}💻 [${name_desktop}]";
+function get_about_system() {
+    local color_text="%{$fg_bold[cyan]%}";
+    local name_user_and_machine="%n@%m";
+    echo "${color_text} ツ [${name_user_and_machine}]";
 }
 
+function get_arrow() {
+    echo "%{$fg_bold[yellow]%}❱%{$fg_bold[blue]%}❱%{$fg_bold[red]%}❱";
+}
 
-PROMPT='$(get_name_desktop) $(get_time) $(get_current_directory)$(git_prompt_info)%{$fg_bold[magenta]%} 》'
+PROMPT='$(get_about_system) $(get_time) $(get_current_directory)$(git_prompt_info) $(get_arrow) ';
