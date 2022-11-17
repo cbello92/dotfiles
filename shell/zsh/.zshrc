@@ -2,6 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 ZSH_THEME="cdev"
+# ZSH_THEME="gndx-zsh-theme/gndx"
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
