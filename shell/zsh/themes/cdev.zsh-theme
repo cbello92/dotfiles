@@ -2,11 +2,11 @@ function git_prompt_info() {
     inside_git_repo="$(git rev-parse --is-inside-work-tree 2>/dev/null)"
     if [ "$inside_git_repo" ]; then
         local current_branch=$(git branch --show-current);
-        git_status=$(git diff --stat | tail -n1 2>/dev/null)
+        git_status=$(git status -s | tail -n1 2>/dev/null);
         if [ "$git_status" ]; then
-            echo "%{$fg_bold[yellow]%} (${current_branch} 🤔)";
+            echo "%{$fg_bold[yellow]%} (${current_branch} ⚡️)";
         else
-            echo "%{$fg_bold[green]%} (${current_branch} 😎)";
+            echo "%{$fg_bold[green]%} (${current_branch} ⭐️)";
         fi
     else
         echo "";
