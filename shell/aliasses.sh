@@ -3,6 +3,7 @@ alias pr="cd /home/camilo/projects-ripley"
 alias mp="cd /home/camilo/my-projects"
 alias psw="cd /home/camilo/projects-ripley/software-sales/ripley-api-integration-intcomex && code ."
 alias envs="cd /app/secrets"
+alias dotf="code $HOME/.dotfiles"
 
 # Alias for edit zsh
 alias configzsh="code $HOME/.dotfiles/shell/zsh/.zshrc"
@@ -36,7 +37,6 @@ alias gc="git commit -m"
 alias gca="git commit --amend"
 alias gp="git push origin HEAD"
 alias gpff="git push -ff origin HEAD"
+alias gbrm="git branch -D"
 alias release-start="git flow release start"
 alias release-end="git flow release finish"
-
-alias dotf="code $HOME/.dotfiles"
