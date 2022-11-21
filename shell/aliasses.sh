@@ -1,7 +1,7 @@
 # Alias for access projects
-alias pr="cd /home/camilo/projects-ripley"
-alias mp="cd /home/camilo/my-projects"
-alias psw="cd /home/camilo/projects-ripley/software-sales/ripley-api-integration-intcomex && code ."
+alias pr="cd $HOME/projects-ripley"
+alias mp="cd $HOME/my-projects"
+alias psw="cd $HOME/projects-ripley/ripley-api-software-sales && code ."
 alias envs="cd /app/secrets"
 alias dotf="code $HOME/.dotfiles"
 
