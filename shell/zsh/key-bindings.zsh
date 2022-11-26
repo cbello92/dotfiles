@@ -6,3 +6,6 @@ bindkey "^s"  _cd_to_dir_project_ripley
 
 zle -N _open_secrets_ripley
 bindkey "^e" _open_secrets_ripley
+
+zle -N _show_scripts_package_json
+bindkey "^ " _show_scripts_package_json
