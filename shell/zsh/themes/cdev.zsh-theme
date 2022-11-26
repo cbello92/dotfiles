@@ -4,9 +4,9 @@ function git_prompt_info() {
         local current_branch=$(git branch --show-current);
         git_status=$(git status -s | tail -n1 2>/dev/null);
         if [ "$git_status" ]; then
-            echo "%{$fg_bold[yellow]%} (${current_branch} ⚡️)";
+            echo "%{$fg[magenta]%} on %F{190}${current_branch} 🔥";
         else
-            echo "%{$fg_bold[green]%} (${current_branch} ⭐️)";
+            echo "%{$fg[magenta]%} on %F{190}${current_branch} 💚";
         fi
     else
         echo "";
