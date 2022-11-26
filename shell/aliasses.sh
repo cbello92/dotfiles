@@ -3,7 +3,7 @@ alias pr="cd $HOME/projects-ripley"
 alias mp="cd $HOME/my-projects"
 alias psw="cd $HOME/projects-ripley/ripley-api-software-sales && code ."
 alias envs="cd /app/secrets"
-alias dotf="code $HOME/.dotfiles"
+alias dotf="cd $HOME/.dotfiles && code ."
 
 # Alias for edit zsh
 alias configzsh="code $HOME/.dotfiles/shell/zsh/.zshrc"
