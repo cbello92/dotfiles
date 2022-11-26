@@ -35,13 +35,14 @@ _open_secrets_ripley() {
 
 _show_scripts_package_json() {
 	if cat package.json > /dev/null 2>&1; then
-    	script_name=$(cat package.json | jq .scripts | jq 'keys | .[]' | sed '1d;$d' | fzf --height 30%)
+    	script_name=$(cat package.json | jq .scripts | jq 'keys | .[]' | fzf --height 25%)
 
 		if [[ -n $script_name ]]; then
 			format_script_name=$(echo $script_name | tr -d '"')
 			yarn run $format_script_name;
 			zle reset-prompt
 		else
+			zle reset-prompt
 			return
 		fi
 	else
