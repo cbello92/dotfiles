@@ -1,20 +1,63 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "MonoMin",
-    "workbench.activityBar.visible": false,
-    "editor.fontFamily": "Dank Mono",
-    "editor.fontWeight": "bold",
-    "editor.fontSize": 15,
-    "editor.fontLigatures": true,
-    "terminal.external.linuxExec": "/bin/zsh",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.fontFamily": "Cascadia Mono PL",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "ƒ - AYU - Operator Mono/Italic",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "indenticator.width": 1,
+  "indenticator.color.dark": "rgba(255,255,255,0.1)",
+  "indenticator.inner.color.dark": "#888",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "terminal.external.linuxExec": "/bin/zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "Cascadia Mono PL",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorCustomizations": {
+    "tab.activeForeground": "#FFFFFF",
+    "tab.activeBorder": "#FFFFFF",
+    "titleBar.border": "#05080A",
+    "list.activeSelectionBackground": "#05080A",
+    "list.inactiveSelectionBackground": "#05080A",
+    "tab.inactiveBackground": "#05080A",
+    "editorGroupHeader.tabsBackground": "#05080A",
+    "editorGroupHeader.noTabsBackground": "#05080A",
+    "activityBar.background": "#05080A",
+    "sideBar.background": "#05080A",
+    "sideBarSectionHeader.background": "#05080A",
+    "activityBar.border": "#0b1015",
+    "tab.border": "#0b1015",
+    "panel.border": "#05080A",
+    "statusBar.border": "#05080A"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.matchBrackets": "never",
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+  "workbench.statusBar.visible": false,
+  "window.title": "${rootName}"
 }
