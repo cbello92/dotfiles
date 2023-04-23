@@ -1,0 +1,18 @@
+[
+    {
+        "key": "shift+m",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "shift+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "shift+u",
+        "command": "editor.action.transformToUppercase"
+    }
+]
