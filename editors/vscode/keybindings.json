@@ -1,6 +1,6 @@
 [
     {
-        "key": "shift+m",
+        "key": "ctrl+shift+m",
         "command": "workbench.action.toggleActivityBarVisibility"
     },
     {
@@ -8,11 +8,21 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "shift+l",
+        "key": "ctrl+shift+l",
         "command": "editor.action.transformToLowercase"
     },
     {
-        "key": "shift+u",
+        "key": "ctrl+shift+u",
         "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
     }
 ]
