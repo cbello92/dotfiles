@@ -65,6 +65,6 @@
   "editor.glyphMargin": false,
   "workbench.statusBar.visible": false,
   "window.title": "${rootName}",
-  "editor.lineHeight": 1.9,
+  "editor.lineHeight": 2.1,
   "workbench.activityBar.visible": false
 }
