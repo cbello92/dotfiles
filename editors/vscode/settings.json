@@ -12,8 +12,8 @@
   "indenticator.color.dark": "rgba(255,255,255,0.1)",
   "indenticator.inner.color.dark": "#888",
   "editor.fontFamily": "Dank Mono",
-  "editor.fontWeight": "bold",
   "editor.fontSize": 15,
+  "editor.fontWeight": "bold",
   "editor.fontLigatures": true,
   "terminal.external.linuxExec": "/bin/zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
@@ -22,19 +22,24 @@
   "workbench.colorCustomizations": {
     "tab.activeForeground": "#FFFFFF",
     "tab.activeBorder": "#FFFFFF",
+    "tab.inactiveBackground": "#18191a",
+    "tab.border": "#0b1015",
     "titleBar.border": "#05080A",
     "list.activeSelectionBackground": "#05080A",
     "list.inactiveSelectionBackground": "#05080A",
-    "tab.inactiveBackground": "#05080A",
-    "editorGroupHeader.tabsBackground": "#05080A",
-    "editorGroupHeader.noTabsBackground": "#05080A",
-    "activityBar.background": "#05080A",
-    "sideBar.background": "#05080A",
-    "sideBarSectionHeader.background": "#05080A",
+    "editor.background": "#1a1a1a",
+    "editorGroupHeader.tabsBackground": "#18191a",
+    "editorGroupHeader.noTabsBackground": "#161616",
+    "activityBar.background": "#0f1214",
     "activityBar.border": "#0b1015",
-    "tab.border": "#0b1015",
+    "activityBar.activeBackground": "#0202026e",
+    "activityBar.foreground": "#FFFFFF",
+    "sideBar.background": "#161718",
+    "sideBarSectionHeader.background": "#16181a",
     "panel.border": "#05080A",
-    "statusBar.border": "#05080A"
+    "panel.background": "#161616",
+    "statusBar.border": "#05080A",
+    "terminal.background": "#141414"
   },
   "[typescript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
@@ -59,5 +64,7 @@
   "breadcrumbs.enabled": false,
   "editor.glyphMargin": false,
   "workbench.statusBar.visible": false,
-  "window.title": "${rootName}"
+  "window.title": "${rootName}",
+  "editor.lineHeight": 1.9,
+  "workbench.activityBar.visible": false
 }
