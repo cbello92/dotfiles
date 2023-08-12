@@ -1,10 +1,10 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "ƒ - AYU - Operator Mono/Italic",
+  "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
   "workbench.editor.showTabs": true,
+  "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.vertical": "auto",
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.guides.indentation": false,
@@ -28,6 +28,7 @@
     "list.activeSelectionBackground": "#05080A",
     "list.inactiveSelectionBackground": "#05080A",
     "editor.background": "#1a1a1a",
+    "editorGutter.background": "#1a1a1a",
     "editorGroupHeader.tabsBackground": "#18191a",
     "editorGroupHeader.noTabsBackground": "#161616",
     "activityBar.background": "#0f1214",
@@ -45,26 +46,37 @@
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "editor.formatOnSave": true
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[jsonc]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.glyphMargin": false,
   "editor.inlineSuggest.enabled": true,
   "editor.matchBrackets": "never",
   "breadcrumbs.enabled": false,
-  "editor.glyphMargin": false,
   "workbench.statusBar.visible": false,
   "window.title": "${rootName}",
-  "editor.lineHeight": 2.1,
-  "workbench.activityBar.visible": false
+  "editor.lineHeight": 2.3,
+  "markdown-preview-enhanced.previewTheme": "monokai.css",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "material-ui-snippets.showNotesOnStartup": false,
+  "editor.linkedEditing": true,
+  "workbench.colorTheme": "ƒ - AYU - Operator Mono/Italic",
+  "redhat.telemetry.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "symbols.hidesExplorerArrows": false,
+  "workbench.activityBar.visible": false,
+  "hediet.vscode-drawio.resizeImages": null
 }

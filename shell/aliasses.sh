@@ -27,9 +27,14 @@ alias order-l="docker logs -f ripley-api-orders"
 alias manifestsh="docker exec -it ripley-api-manifest sh"
 alias ordersh="docker exec -it ripley-api-orders sh"
 
+# Alias for mongo
+alias mongoqa='mongosh "mongodb+srv://$MONGODB_QA_HOST" --apiVersion 1 --username $MONGODB_QA_USER --password $MONGODB_QA_PASSWORD'
+alias mongoprd='mongosh "mongodb+srv://$MONGODB_PROD_HOST" --apiVersion 1 --username $MONGODB_PROD_USER --password $MONGODB_PROD_PASSWORD'
+
 # Alias for git
 alias gsw="git switch"
 alias gcb="git checkout -b"
+alias gcbf='f() { git checkout -b feature/$1; }; f'
 alias gcd="git checkout develop"
 alias gcm="git checkout master"
 alias gcq="git checkout qa"

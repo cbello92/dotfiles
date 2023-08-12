@@ -11,6 +11,8 @@ source $HOME/.dotfiles/shell/init.sh
 
 export NVM_DIR=~/.nvm
 source $NVM_DIR/nvm.sh
-#  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export DENO_INSTALL="/home/camilo/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 source $HOME/.dotfiles/shell/zsh/key-bindings.zsh
