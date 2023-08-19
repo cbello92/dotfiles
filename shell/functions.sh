@@ -10,6 +10,10 @@ _open_project_ripley() {
 	fi 
 }
 
+_get_secret_tools_by_name() {
+	secret-tool lookup password $1
+}
+
 _feature_branch() {
 	if [[ -z $1 ]]; then
 		echo "You must enter a name for the branch"

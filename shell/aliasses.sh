@@ -27,9 +27,11 @@ alias order-l="docker logs -f ripley-api-orders"
 alias manifestsh="docker exec -it ripley-api-manifest sh"
 alias ordersh="docker exec -it ripley-api-orders sh"
 
+alias getsecret="_get_secret_tools_by_name"
+
 # Alias for mongo
-alias mongoqa='mongosh "mongodb+srv://$MONGODB_QA_HOST" --apiVersion 1 --username $MONGODB_QA_USER --password $MONGODB_QA_PASSWORD'
-alias mongoprd='mongosh "mongodb+srv://$MONGODB_PROD_HOST" --apiVersion 1 --username $MONGODB_PROD_USER --password $MONGODB_PROD_PASSWORD'
+alias mongoqa='mongosh mongodb+srv://$(_get_secret_tools_by_name mqa_host) --apiVersion 1 --username $(_get_secret_tools_by_name mqa_user) --password $(_get_secret_tools_by_name mqa_password)'
+alias mongoprd='mongosh mongodb+srv://$(_get_secret_tools_by_name mprd_host) --apiVersion 1 --username $(_get_secret_tools_by_name mprd_user) --password $(_get_secret_tools_by_name mprd_password)'
 
 # Alias for git
 alias gsw="git switch"
