@@ -16,3 +16,11 @@ export DENO_INSTALL="/home/camilo/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 source $HOME/.dotfiles/shell/zsh/key-bindings.zsh
+
+# pnpm
+export PNPM_HOME="/home/camilo/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

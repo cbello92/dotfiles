@@ -34,7 +34,9 @@ alias mongoprd='mongosh "mongodb+srv://$MONGODB_PROD_HOST" --apiVersion 1 --user
 # Alias for git
 alias gsw="git switch"
 alias gcb="git checkout -b"
-alias gcbf='f() { git checkout -b feature/$1; }; f'
+alias gfeat='_feature_branch'
+alias gfix='_hotfix_branch'
+alias gref='_refactor_branch'
 alias gcd="git checkout develop"
 alias gcm="git checkout master"
 alias gcq="git checkout qa"

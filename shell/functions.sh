@@ -10,6 +10,30 @@ _open_project_ripley() {
 	fi 
 }
 
+_feature_branch() {
+	if [[ -z $1 ]]; then
+		echo "You must enter a name for the branch"
+		return
+	fi
+	git checkout -b feature/$1;
+}
+
+_hotfix_branch() {
+	if [[ -z $1 ]]; then
+		echo "You must enter a name for the branch"
+		return
+	fi
+	git checkout -b hotfix/$1;
+}
+
+_refactor_branch() {
+	if [[ -z $1 ]]; then
+		echo "You must enter a name for the branch"
+		return
+	fi
+	git checkout -b refactor/$1;
+}
+
 _cd_to_dir_project_ripley() {
 	project=$(ls "$base_dir" | fzf)
 	if [[ -n $project ]]; then 
