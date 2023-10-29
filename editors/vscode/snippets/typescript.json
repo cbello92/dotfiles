@@ -1,0 +1,49 @@
+{
+	"itest": {
+		"prefix": "itest",
+		"body": [
+		  "describe('$1 Integration', () => {",
+		  "  describe('$2', () => {",
+		  "    describe('when $3 method is called', () => {",
+		  "      ",
+		  "    });",
+		  "  });",
+		  "});"
+		],
+		"description": "Block code integration tests"
+	},
+	"utest": {
+		"prefix": "utest",
+		"body": [
+		  "describe('$1 Unit', () => {",
+		  "  describe('$2', () => {",
+		  "    describe('when $3 method is called', () => {",
+		  "      ",
+		  "    });",
+		  "  });",
+		  "});"
+		],
+		"description": "Block code unit tests"
+	},
+    "lgi": {
+        "prefix": "lgi",
+        "body": [
+          "logger.info('$1', {$2})"
+        ],
+        "description": "Info Log Application"
+    },
+    "lge": {
+        "prefix": "lge",
+        "body": [
+          "logger.error('$1', {$2})"
+        ],
+        "description": "Error Log Application"
+    },
+    "lgw": {
+        "prefix": "lgw",
+        "body": [
+          "logger.warn('$1', {$2})"
+        ],
+        "description": "Warning Log Application"
+    }
+}

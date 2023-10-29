@@ -71,12 +71,13 @@
   },
   "material-ui-snippets.showNotesOnStartup": false,
   "editor.linkedEditing": true,
-  "workbench.colorTheme": "ƒ - AYU - Operator Mono/Italic",
+  "workbench.colorTheme": "Dark+ Mono",
   "redhat.telemetry.enabled": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "symbols.hidesExplorerArrows": false,
   "workbench.activityBar.visible": false,
-  "hediet.vscode-drawio.resizeImages": null
+  "hediet.vscode-drawio.resizeImages": null,
+  "codemetrics.basics.ComplexityLevelHigh": 15
 }
