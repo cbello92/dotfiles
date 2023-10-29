@@ -46,6 +46,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gca="git commit --amend"
 alias gp="git push origin HEAD"
+alias gpull='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpt="git push --tags"
 alias gpff="git push -ff origin HEAD"
 alias gbrm="git branch -D"
