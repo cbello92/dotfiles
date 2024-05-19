@@ -30,7 +30,8 @@ alias ordersh="docker exec -it ripley-api-orders sh"
 alias getsecret="_get_secret_tools_by_name"
 
 # Alias for mongo
-alias mongoqa='mongosh mongodb+srv://$(_get_secret_tools_by_name mqa_host) --apiVersion 1 --username $(_get_secret_tools_by_name mqa_user) --password $(_get_secret_tools_by_name mqa_password)'
+alias mongoqa='mongosh mongodb+srv://$(_get_secret_tools_by_name volt_qa_host_mongodb) --apiVersion 1 --username $(_get_secret_tools_by_name volt_qa_user_mongodb) --password $(_get_secret_tools_by_name volt_qa_password_mongodb)'
+alias mongodev='mongosh mongodb+srv://$(_get_secret_tools_by_name mqa_host) --apiVersion 1 --username $(_get_secret_tools_by_name mqa_user) --password $(_get_secret_tools_by_name mqa_password)'
 alias mongoprd='mongosh mongodb+srv://$(_get_secret_tools_by_name mprd_host) --apiVersion 1 --username $(_get_secret_tools_by_name mprd_user) --password $(_get_secret_tools_by_name mprd_password)'
 
 # Alias for git
@@ -52,3 +53,8 @@ alias gpff="git push -ff origin HEAD"
 alias gbrm="git branch -D"
 alias release-start="git flow release start"
 alias release-end="git flow release finish"
+
+alias air='$(go env GOPATH)/bin/air'
+
+
+alias gotest="go test ./...  -coverpkg=./... -coverprofile ./coverage.out && go tool cover -html=coverage.out"

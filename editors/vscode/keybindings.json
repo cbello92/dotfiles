@@ -38,5 +38,9 @@
         "key": "ctrl+[Period]",
         "command": "-editor.action.quickFix",
         "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+v",
+        "command": "liveshare.accessibility.toggleVoiceEnabled"
     }
 ]
