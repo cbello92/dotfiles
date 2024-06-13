@@ -43,20 +43,23 @@
     "terminal.background": "#141414"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[jsonc]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.glyphMargin": false,
   "editor.inlineSuggest.enabled": true,
@@ -79,5 +82,5 @@
   "symbols.hidesExplorerArrows": false,
   "hediet.vscode-drawio.resizeImages": null,
   "codemetrics.basics.ComplexityLevelHigh": 15,
-  "workbench.activityBar.location": "default"
+  "github.copilot.editor.enableAutoCompletions": true,
 }
