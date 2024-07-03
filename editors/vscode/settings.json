@@ -12,12 +12,13 @@
   "indenticator.color.dark": "rgba(255,255,255,0.1)",
   "indenticator.inner.color.dark": "#888",
   "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.fontWeight": "bold",
   "editor.fontLigatures": true,
   "terminal.external.linuxExec": "/bin/zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontFamily": "Cascadia Mono PL",
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.colorCustomizations": {
     "tab.activeForeground": "#FFFFFF",
@@ -83,4 +84,5 @@
   "hediet.vscode-drawio.resizeImages": null,
   "codemetrics.basics.ComplexityLevelHigh": 15,
   "github.copilot.editor.enableAutoCompletions": true,
+  "git.autofetch": true,
 }

@@ -9,3 +9,5 @@ bindkey "^e" _open_secrets_ripley
 
 zle -N _show_scripts_package_json
 bindkey "^ " _show_scripts_package_json
+
+bindkey -s '^O' 'cdf\n'

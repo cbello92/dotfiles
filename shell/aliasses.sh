@@ -1,9 +1,16 @@
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+
 # Alias for access projects
 alias pr="cd $HOME/projects-ripley"
 alias mp="cd $HOME/my-projects"
 alias psw="cd $HOME/projects-ripley/ripley-api-software-sales && code ."
 alias envs="cd /app/secrets"
 alias dotf="cd $HOME/.dotfiles && code ."
+
+alias vsc="code ."
 
 # Alias for edit zsh
 alias configzsh="code $HOME/.dotfiles/shell/zsh/.zshrc"
@@ -14,8 +21,7 @@ alias nvm-u="nvm alias default"
 alias net-reset="sudo netstat winsock reset catalog && netstat int ipv4 reset reset.log"
 alias ..="cd .."
 alias ~="cd ~"
-alias ll="ls -l"
-alias la="ls -la"
+alias cdf='_fzf_cd'
 
 # Alias for Docker
 alias dcl="docker-compose -f docker-compose-local.yml up --force-recreate"
@@ -35,6 +41,7 @@ alias mongodev='mongosh mongodb+srv://$(_get_secret_tools_by_name mqa_host) --ap
 alias mongoprd='mongosh mongodb+srv://$(_get_secret_tools_by_name mprd_host) --apiVersion 1 --username $(_get_secret_tools_by_name mprd_user) --password $(_get_secret_tools_by_name mprd_password)'
 
 # Alias for git
+alias gs="git status"
 alias gsw="git switch"
 alias gcb="git checkout -b"
 alias gfeat='_feature_branch'
@@ -45,7 +52,9 @@ alias gcm="git checkout master"
 alias gcq="git checkout qa"
 alias ga="git add"
 alias gc="git commit"
+alias gcv="git commit --no-verify"
 alias gca="git commit --amend"
+alias gcav="git commit --amend --no-verify"
 alias gp="git push origin HEAD"
 alias gpull='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpt="git push --tags"

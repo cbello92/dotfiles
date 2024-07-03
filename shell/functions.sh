@@ -77,3 +77,9 @@ _show_scripts_package_json() {
 		return
 	fi
 }
+
+_fzf_cd() {
+  local dir
+  dir=$(find . -maxdepth 1 -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
