@@ -1,10 +1,11 @@
-alias ls='exa --icons --color=always --group-directories-first'
-alias ll='exa -alF --icons --color=always --group-directories-first'
-alias la='exa -a --icons --color=always --group-directories-first'
-alias l='exa -F --icons --color=always --group-directories-first'
+alias ls='eza --icons --color=always --group-directories-first'
+alias ll='eza -alF --icons --color=always --group-directories-first'
+alias la='eza -a --icons --color=always --group-directories-first'
+alias l='eza -F --icons --color=always --group-directories-first'
 
 # Alias for access projects
 alias pr="cd $HOME/projects-ripley"
+alias se="cd $HOME/Ripley/SVC-Engine"
 alias mp="cd $HOME/my-projects"
 alias psw="cd $HOME/projects-ripley/ripley-api-software-sales && code ."
 alias envs="cd /app/secrets"
